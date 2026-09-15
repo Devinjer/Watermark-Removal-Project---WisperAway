@@ -1,0 +1,8 @@
+packages:
+  - "apps/web"
+  - "packages/*"
+
+autoInstallPeers: true
+nodeLinker: hoisted
+allowBuilds:
+  unrs-resolver: true
