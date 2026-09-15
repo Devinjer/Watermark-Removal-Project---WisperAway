@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #11131d;
+  --surface-low: #191b26;
+  --surface: #1d1f2a;
+  --surface-high: #282934;
+  --surface-highest: #323440;
+  --text: #e1e1f0;
+  --text-secondary: #c5c5d7;
+  --text-muted: #8f8fa1;
+  --border: #323440;
+  --border-strong: #444655;
+  --primary: #bbc3ff;
+  --indigo: #596fff;
+  --violet: #a876ff;
+  --rose: #ff7eae;
+  --success: #2fb178;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 0%, rgb(89 111 255 / 0.12), transparent 30rem),
+    radial-gradient(circle at 82% 18%, rgb(168 118 255 / 0.09), transparent 28rem),
+    var(--background);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.eyebrow {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  color: var(--primary);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.status-pill {
+  border: 1px solid rgb(47 177 120 / 0.32);
+  border-radius: 999px;
+  background: rgb(47 177 120 / 0.08);
+  color: #80d7ad;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.72rem;
+}
